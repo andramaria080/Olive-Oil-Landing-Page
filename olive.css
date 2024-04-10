@@ -1,0 +1,421 @@
+body {
+  font-family: "Monteserrat", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  margin: 0px;
+  color: var(--brownlight);
+}
+:root {
+  --olive: #697b03;
+  --brownlight: #7e4e24;
+  --brownCream: #f69846;
+  --errorRaspberry: #fb4e4e;
+  --blackPh: #25282b;
+  --oliveYellow: #e3c300;
+  --oliveTranslucid: #697b0371;
+}
+p {
+  font-size: 16px;
+}
+
+.header-background {
+  background-image: url(imgs/background-olive-first-container.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 640px;
+}
+nav {
+  column-gap: 40px;
+}
+.container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  right: 100%;
+  background-color: #f7eecd;
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.menu.open {
+  right: 0px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+li a:hover,
+li a:focus {
+  color: var(--olive);
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0px;
+  transition: all 0.4s;
+  align-items: center;
+  margin: 20px 0px;
+  font-size: 16px;
+}
+.letsDoBussines {
+  display: flex;
+  justify-content: center;
+}
+.primary-button {
+  color: var(--olive);
+  border-radius: 4px;
+  border: 2px solid var(--olive);
+  text-transform: uppercase;
+  background-color: transparent;
+  height: 54px;
+  transition: all 0.4s;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-family: "Monteserrat", sans-serif;
+}
+.primary-button:hover,
+.primary-button:focus {
+  cursor: pointer;
+  color: var(--brownlight);
+  border-color: var(--brownlight);
+}
+.hamburger.open .bar:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open .bar:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.primary-header {
+  font-size: 38px;
+  color: var(--olive);
+  padding: 0px;
+  margin: 12px 0px 32px 0px;
+}
+.olive-oil-bussines {
+  flex-direction: column;
+  margin-top: 160px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.olive-oil-bussines p {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.hamburger {
+  height: 36px;
+  width: 36px;
+  margin-left: auto;
+  position: relative;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: var(--olive);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  transition: 0.3s ease;
+}
+.bar:nth-child(1) {
+  top: 25%;
+}
+
+.bar:nth-child(3) {
+  top: 75%;
+}
+.cards-olive-oil {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+  gap: 40px;
+}
+.left-card-olive-oil,
+.right-card-olive-oil {
+  width: 100%;
+}
+.img-card-olive-oil {
+  width: 100%;
+}
+.second-header {
+  font-size: 24px;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin: 16px 0px 48px 0px;
+}
+.second-header ~ p {
+  color: var(--blackPh);
+}
+.second-button {
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--brownlight);
+  padding: 0px;
+}
+.second-button:hover {
+  color: var(--olive);
+}
+.olive-oil-drop {
+  width: fit-content;
+}
+.video-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.video-olive-oil {
+  flex-direction: column;
+  align-items: center;
+  margin: 60px auto;
+  text-align: center;
+}
+#play-video-oil {
+  width: 70%;
+}
+.video-play {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  border: none;
+  padding: 8px;
+  margin: 0px;
+  background-color: var(--oliveYellow);
+}
+.health-container {
+  background-image: url(imgs/background-olive-3th.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 489px;
+  display: flex;
+  padding: 60px 0px;
+}
+
+.health-content {
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+.health-button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+#health-moto {
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: lighter;
+}
+.do-bussines-container {
+  background-image: url(imgs/background-olive-4th.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 654px;
+  display: flex;
+  padding: 100px 0px;
+}
+.do-bussines-content {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.do-bussines-content p {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-shadow: 0.1px 0.2px 1px #6d441f;
+}
+
+#doBussinesPh {
+  width: 60%;
+}
+.button-do-bussines {
+  background-color: var(--olive);
+  color: white;
+  margin-top: 20px;
+  border: none;
+}
+.button-do-bussines:hover {
+  background-color: var(--oliveTranslucid);
+  color: var(--olive);
+}
+.button-do-bussines:focus {
+  color: white;
+}
+.media-links {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  gap: 30px;
+  margin: 60px auto;
+  padding: 0px 20px;
+}
+.media-links-category {
+  display: flex;
+  flex-direction: column;
+}
+.media-links-category a {
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.media-links-category a:hover {
+  color: var(--olive);
+}
+.media-links-category h4 {
+  padding: 10px 0px;
+  margin: 0px;
+}
+.media-links-category button {
+  margin: 10px 0px;
+}
+.media-data-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.media-data-bottom:hover {
+  color: var(--olive);
+}
+.media-data-bottom a {
+  padding: 0px 20px;
+}
+.footer-content-color {
+  background-color: var(--olive);
+  height: auto;
+  width: 100%;
+  color: white;
+  display: flex;
+  margin-top: 32px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.footer-logos-container {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer-content a:hover {
+  text-decoration: underline;
+}
+.footer-logo-media:hover {
+  border: 2px solid var(--brownlight);
+}
+@media screen and (min-width: 820px) {
+  .olive-oil-bussines {
+    justify-content: flex-start;
+    align-items: start;
+    text-align: start;
+  }
+  .olive-oil-bussines p {
+    width: 60%;
+  }
+  .menu {
+    position: inherit;
+    flex-direction: row;
+    padding: 0px;
+    width: auto;
+    column-gap: 40px;
+    background-color: transparent;
+    transform: translate(0);
+  }
+  .nav-links {
+    flex-direction: row;
+    column-gap: 40px;
+    margin: 0px;
+  }
+  .primary-button {
+    font-size: 16px;
+  }
+  .primary-header {
+    font-size: 46px;
+  }
+  .second-header {
+    font-size: 32px;
+  }
+  #letsDoBussines {
+    margin: 0px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .cards-olive-oil {
+    flex-direction: row;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    margin-top: 60px;
+  }
+  .left-card-olive-oil {
+    justify-content: flex-start;
+  }
+  .left-card-olive-oil {
+    justify-content: flex-end;
+  }
+  .left-card-olive-oil,
+  .right-card-olive-oil {
+    width: 100%;
+  }
+  .video-play {
+    padding: 16px;
+  }
+  #play-video-oil {
+    width: 90%;
+  }
+  .video-olive-oil {
+    text-align: left;
+  }
+  .media-links {
+    text-align: start;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media screen and (min-width: 640px) {
+  #health-moto {
+    font-size: 52px;
+    line-height: 64px;
+  }
+  .do-bussines-content p {
+    text-shadow: none;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
